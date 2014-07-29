@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="4510" systemVersion="12F45" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="dSr-fR-qdi" customClass="AGIVideoCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="224"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="200" height="224"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WtV-3D-gt9" userLabel="Image View - Thumbnail">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="112"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="112" placeholder="YES" id="6MQ-kx-hPR"/>
+                        </constraints>
+                    </imageView>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="playVideo" translatesAutoresizingMaskIntoConstraints="NO" id="Swo-jt-Tm8" userLabel="Image View - Play icon">
+                        <rect key="frame" x="78" y="33" width="45" height="45"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="200" translatesAutoresizingMaskIntoConstraints="NO" id="qfH-5C-N4B" userLabel="Label - Title">
+                        <rect key="frame" x="0.0" y="123" width="200" height="70"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1RP-dB-nqF">
+                        <rect key="frame" x="0.0" y="204" width="200" height="20"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="14"/>
+                        <color key="textColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="WtV-3D-gt9" firstAttribute="top" secondItem="dSr-fR-qdi" secondAttribute="top" id="8GZ-4g-yOv"/>
+                <constraint firstAttribute="centerX" secondItem="Swo-jt-Tm8" secondAttribute="centerX" id="U0C-Qv-LJg"/>
+                <constraint firstAttribute="trailing" secondItem="WtV-3D-gt9" secondAttribute="trailing" id="UtY-14-zQy"/>
+                <constraint firstItem="WtV-3D-gt9" firstAttribute="leading" secondItem="dSr-fR-qdi" secondAttribute="leading" id="aZl-94-UiR"/>
+                <constraint firstItem="Swo-jt-Tm8" firstAttribute="centerY" secondItem="WtV-3D-gt9" secondAttribute="centerY" id="b2m-mz-hN6"/>
+                <constraint firstAttribute="trailing" secondItem="1RP-dB-nqF" secondAttribute="trailing" id="cYW-2L-q3N"/>
+                <constraint firstAttribute="trailing" secondItem="qfH-5C-N4B" secondAttribute="trailing" id="ibc-4s-EP8"/>
+                <constraint firstItem="1RP-dB-nqF" firstAttribute="top" secondItem="qfH-5C-N4B" secondAttribute="bottom" constant="11" id="vAb-8K-AKg"/>
+                <constraint firstItem="1RP-dB-nqF" firstAttribute="leading" secondItem="dSr-fR-qdi" secondAttribute="leading" id="w1R-gl-p4w"/>
+                <constraint firstItem="qfH-5C-N4B" firstAttribute="leading" secondItem="dSr-fR-qdi" secondAttribute="leading" id="xvw-cU-hS3"/>
+                <constraint firstItem="qfH-5C-N4B" firstAttribute="top" secondItem="WtV-3D-gt9" secondAttribute="bottom" constant="11" id="zpr-Ot-3wH"/>
+            </constraints>
+            <size key="customSize" width="248" height="328"/>
+            <connections>
+                <outlet property="dateLabel" destination="1RP-dB-nqF" id="CLl-gC-A6w"/>
+                <outlet property="playIcon" destination="Swo-jt-Tm8" id="QgF-2n-wsP"/>
+                <outlet property="thumbnailImage" destination="WtV-3D-gt9" id="xSP-k8-O0h"/>
+                <outlet property="titleLabel" destination="qfH-5C-N4B" id="fHO-TH-SKz"/>
+                <outletCollection property="mediumSpaceConstraints" destination="vAb-8K-AKg" id="LyN-9x-KYB"/>
+                <outletCollection property="mediumSpaceConstraints" destination="zpr-Ot-3wH" id="vxM-eh-PbV"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="playVideo" width="45" height="45"/>
+    </resources>
+</document>

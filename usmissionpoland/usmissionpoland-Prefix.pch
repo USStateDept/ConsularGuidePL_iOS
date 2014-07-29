@@ -1,0 +1,37 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+#import "Example.h"
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import <CoreData/CoreData.h>
+    #import "BilingualLabel.h"
+    #import "LanguageSettings.h"
+    #import "ServerPicker.h"
+    #define POST_NOTIFICATION_SWITCH_LANGUAGE @"SWITCH_LANGUAGE"
+    #define POST_NOTIFICATION_SHOW_ALERT @"SHOW_ALERT"
+    #define POST_NOTIFICATION_DID_HIDE_ALERT @"DID_HIDE_ALERT"
+    #define POST_NOTIFICATION_SHOW_ADDITIONAL_INFO @"SHOW_ADDITIONAL_INFO"
+    #define POST_NOTIFICATION_HIDE_ADDITIONAL_INFO @"HIDE_ADDITIONAL_INFO"
+    #define POST_NOTIFICATION_DID_END_DATABASE_UPDATE @"DID_END_DATABASE_UPDATE"
+    #define POST_NOTIFICATION_DID_START_DATABASE_UPDATE @"DID_START_DATABASE_UPDATE"
+    #define POST_NOTIFICATION_NEWS_DID_APPEAR @"NEWS_DID_APPEAR"
+    #define POST_NOTIFICATION_NEWS_DID_DISAPPEAR @"NEWS_DID_DISAPPEAR"
+    #define CustomUSAppBlueColor [UIColor colorWithRed:0.15f green:0.28f blue:0.47f alpha:1]
+    #define CustomUSAppLightBlueColor [UIColor colorWithRed:0.32f green:0.42f blue:0.57f alpha:1]
+    #define API_BASE_URL [[ServerPicker picker] serverBaseUrl]
+    #define API_POST_DATA_URL [[ServerPicker picker] serverPostDataUrl]
+    #define API_JSON_URL [[ServerPicker picker] serverJsonUrl]
+    #define DEFAULT_FONT_BOLD @"Avenir-Medium"
+    #define DEFAULT_FONT_REGULAR @"Avenir-Light"
+#endif

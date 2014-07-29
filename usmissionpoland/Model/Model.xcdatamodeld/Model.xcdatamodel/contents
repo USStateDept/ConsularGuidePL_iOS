@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3396" systemVersion="12F45" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="APNSInfo" representedClassName="APNSInfo" syncable="YES">
+        <attribute name="deviceToken" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Page" representedClassName="Page" syncable="YES">
+        <attribute name="additionalEN" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="additionalPL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="contentEN" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="contentPL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="index" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="mapZoom" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="pageId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="parentId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="titleEN" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="titlePL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="version" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="PdfInfo" representedClassName="PdfInfo" syncable="YES">
+        <attribute name="fileVersion" optional="YES" attributeType="Integer 32" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="nameEn" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="namePl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="size" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="sourceURLEn" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sourceURLPl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="updated" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="version" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="APNSInfo" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Page" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="PdfInfo" positionX="0" positionY="0" width="0" height="0"/>
+    </elements>
+</model>

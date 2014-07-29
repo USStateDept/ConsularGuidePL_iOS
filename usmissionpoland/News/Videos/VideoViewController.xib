@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="4510" systemVersion="12F45" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VideoViewController">
+            <connections>
+                <outlet property="collectionView" destination="vxV-sM-GSF" id="G9X-H0-sko"/>
+                <outlet property="mostViewedDate" destination="jFk-Em-HGW" id="DVC-9A-krl"/>
+                <outlet property="mostViewedLabel" destination="CT6-Bk-8Gr" id="Ptp-Z0-AzT"/>
+                <outlet property="mostViewedPlayIcon" destination="NrA-J6-gDf" id="hzS-9J-knX"/>
+                <outlet property="mostViewedThumbnail" destination="ZEO-CB-H4U" id="KeV-U6-9ze"/>
+                <outlet property="mostviewedTitle" destination="r2J-vc-fZo" id="aHe-nc-3dx"/>
+                <outlet property="recentVideoLabel" destination="HId-NG-VjK" id="bSi-Y4-wFJ"/>
+                <outlet property="view" destination="1" id="2jg-yv-tNj"/>
+                <outletCollection property="mediumSpaceConstraints" destination="NO2-h9-7F2" id="MZc-z0-7nC"/>
+                <outletCollection property="mediumSpaceConstraints" destination="6ra-au-z3c" id="JgW-bw-LyA"/>
+                <outletCollection property="mediumSpaceConstraints" destination="Ess-YB-PXL" id="uNg-68-lVz"/>
+                <outletCollection property="mediumSpaceConstraints" destination="n4e-95-iqK" id="uC4-JB-uJU"/>
+                <outletCollection property="bigSpaceConstraints" destination="sTj-HB-7pm" id="rjX-AA-Rl8"/>
+                <outletCollection property="xxlSpaceConstraints" destination="Ud8-Ry-mgB" id="NVk-Ig-BVQ"/>
+                <outletCollection property="xxlSpaceConstraints" destination="B0J-J5-1tS" id="1qN-se-nKb"/>
+                <outletCollection property="smallSpaceConstraints" destination="r1h-it-Or3" id="U3H-6B-BQc"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recent video" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HId-NG-VjK">
+                    <rect key="frame" x="17" y="6" width="111" height="25"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="vxV-sM-GSF">
+                    <rect key="frame" x="0.0" y="42" width="768" height="240"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="240" placeholder="YES" id="GKG-Ps-4AO"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="6" minimumInteritemSpacing="6" id="7Zn-no-zZ8">
+                        <size key="itemSize" width="175" height="240"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="17" minY="0.0" maxX="17" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <cells/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="cQ4-4c-VIM"/>
+                        <outlet property="delegate" destination="-1" id="rqK-ux-aAb"/>
+                    </connections>
+                </collectionView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Most viewed" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CT6-Bk-8Gr">
+                    <rect key="frame" x="17" y="299" width="109" height="25"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZEO-CB-H4U" userLabel="Image View - Most viewed video thumbnail">
+                    <rect key="frame" x="17" y="335" width="734" height="335"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="335" placeholder="YES" id="xJ9-uY-CZc"/>
+                    </constraints>
+                </imageView>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="playVideo" translatesAutoresizingMaskIntoConstraints="NO" id="NrA-J6-gDf" userLabel="Image View - Play video icon">
+                    <rect key="frame" x="362" y="480" width="45" height="45"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KFN-Dc-z7v" userLabel="Button - Most viewed play recognizer">
+                    <rect key="frame" x="17" y="335" width="734" height="335"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="playMostViewedVideo" destination="-1" eventType="touchUpInside" id="8y1-yg-v45"/>
+                    </connections>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="734" translatesAutoresizingMaskIntoConstraints="NO" id="r2J-vc-fZo" userLabel="Label - Most viewed video title">
+                    <rect key="frame" x="17" y="681" width="734" height="0.0"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jFk-Em-HGW" userLabel="Label - Date">
+                    <rect key="frame" x="17" y="692" width="734" height="0.0"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="14"/>
+                    <color key="textColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="r2J-vc-fZo" firstAttribute="leading" secondItem="CT6-Bk-8Gr" secondAttribute="leading" id="25J-TB-Ljl"/>
+                <constraint firstItem="HId-NG-VjK" firstAttribute="leading" secondItem="CT6-Bk-8Gr" secondAttribute="leading" id="69Z-Y9-MvT"/>
+                <constraint firstItem="vxV-sM-GSF" firstAttribute="top" secondItem="HId-NG-VjK" secondAttribute="bottom" constant="11" id="6ra-au-z3c"/>
+                <constraint firstItem="KFN-Dc-z7v" firstAttribute="bottom" secondItem="ZEO-CB-H4U" secondAttribute="bottom" id="7F8-Pu-nqu"/>
+                <constraint firstItem="jFk-Em-HGW" firstAttribute="trailing" secondItem="r2J-vc-fZo" secondAttribute="trailing" id="9ZT-Uh-3Iv"/>
+                <constraint firstAttribute="trailing" secondItem="ZEO-CB-H4U" secondAttribute="trailing" constant="17" id="B0J-J5-1tS"/>
+                <constraint firstItem="vxV-sM-GSF" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="BNl-9D-Xi3"/>
+                <constraint firstItem="r2J-vc-fZo" firstAttribute="top" secondItem="ZEO-CB-H4U" secondAttribute="bottom" constant="11" id="Ess-YB-PXL"/>
+                <constraint firstItem="KFN-Dc-z7v" firstAttribute="leading" secondItem="ZEO-CB-H4U" secondAttribute="leading" id="Fs1-ts-U6R"/>
+                <constraint firstAttribute="centerX" secondItem="NrA-J6-gDf" secondAttribute="centerX" id="IZe-OM-5VK"/>
+                <constraint firstItem="ZEO-CB-H4U" firstAttribute="top" secondItem="CT6-Bk-8Gr" secondAttribute="bottom" constant="11" id="NO2-h9-7F2"/>
+                <constraint firstItem="HId-NG-VjK" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="17" id="Ud8-Ry-mgB"/>
+                <constraint firstItem="KFN-Dc-z7v" firstAttribute="trailing" secondItem="ZEO-CB-H4U" secondAttribute="trailing" id="Vxv-op-BQp"/>
+                <constraint firstItem="jFk-Em-HGW" firstAttribute="leading" secondItem="r2J-vc-fZo" secondAttribute="leading" id="bef-GA-FCu"/>
+                <constraint firstItem="ZEO-CB-H4U" firstAttribute="centerY" secondItem="NrA-J6-gDf" secondAttribute="centerY" id="iIh-AC-7xN"/>
+                <constraint firstItem="jFk-Em-HGW" firstAttribute="top" secondItem="r2J-vc-fZo" secondAttribute="bottom" constant="11" id="n4e-95-iqK"/>
+                <constraint firstItem="HId-NG-VjK" firstAttribute="top" secondItem="1" secondAttribute="top" constant="6" id="r1h-it-Or3"/>
+                <constraint firstItem="KFN-Dc-z7v" firstAttribute="trailing" secondItem="r2J-vc-fZo" secondAttribute="trailing" id="s4h-aN-iyB"/>
+                <constraint firstItem="CT6-Bk-8Gr" firstAttribute="top" secondItem="vxV-sM-GSF" secondAttribute="bottom" constant="17" id="sTj-HB-7pm"/>
+                <constraint firstItem="KFN-Dc-z7v" firstAttribute="top" secondItem="ZEO-CB-H4U" secondAttribute="top" id="wKU-UL-O2S"/>
+                <constraint firstAttribute="trailing" secondItem="vxV-sM-GSF" secondAttribute="trailing" id="x2w-o5-Xgd"/>
+                <constraint firstItem="ZEO-CB-H4U" firstAttribute="leading" secondItem="CT6-Bk-8Gr" secondAttribute="leading" id="xH4-bT-NEa"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="playVideo" width="45" height="45"/>
+    </resources>
+</document>

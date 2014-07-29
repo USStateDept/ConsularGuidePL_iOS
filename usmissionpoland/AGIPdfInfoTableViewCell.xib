@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4510" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="I41-fp-Q5b" customClass="AGIPdfInfoTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="76"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="I41-fp-Q5b" id="wir-Rn-7FP">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y3x-Rc-kBV" userLabel="View - Update indicator">
+                        <rect key="frame" x="0.0" y="0.0" width="3" height="75"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.99215686274509807" green="0.40784313725490196" blue="0.10196078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="3" id="6DV-7o-93Q"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VWK-Rg-Wu7" userLabel="View - Info Container">
+                        <rect key="frame" x="17" y="3" width="269" height="69"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The child's foreign birth certificate sadasd sdsadad dasad" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="269" translatesAutoresizingMaskIntoConstraints="NO" id="dcy-dY-M2p" userLabel="Label - Name">
+                                <rect key="frame" x="0.0" y="0.0" width="269" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PDF | " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GWg-BQ-gjk">
+                                <rect key="frame" x="0.0" y="53" width="29" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="11"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3.2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tP2-wu-Y66">
+                                <rect key="frame" x="29" y="53" width="15" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="11"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" MB | " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lxi-gW-ndf">
+                                <rect key="frame" x="44" y="53" width="28" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="11"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Update: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ifw-7w-yB2">
+                                <rect key="frame" x="72" y="53" width="43" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="11"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="September 12, 2013" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hCF-ox-leN">
+                                <rect key="frame" x="115" y="53" width="98" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="11"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" | " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ueh-BI-wy3">
+                                <rect key="frame" x="213" y="53" width="9" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="11"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c6h-cf-Zze">
+                                <rect key="frame" x="222" y="43" width="64" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="9m1-CB-J4Q"/>
+                                    <constraint firstAttribute="height" constant="36" id="hX9-Bs-ub2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="11"/>
+                                <state key="normal" title="Send »">
+                                    <color key="titleColor" red="0.11372549019607843" green="0.20784313725490194" blue="0.396078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapSendButton:" destination="I41-fp-Q5b" eventType="touchUpInside" id="dLa-DF-jsG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="c6h-cf-Zze" firstAttribute="centerY" secondItem="GWg-BQ-gjk" secondAttribute="centerY" id="2G0-Ww-Qf5"/>
+                            <constraint firstItem="hCF-ox-leN" firstAttribute="leading" secondItem="Ifw-7w-yB2" secondAttribute="trailing" id="9I7-Uq-3gQ"/>
+                            <constraint firstItem="hCF-ox-leN" firstAttribute="centerY" secondItem="GWg-BQ-gjk" secondAttribute="centerY" id="A4e-Kr-tc9"/>
+                            <constraint firstItem="Lxi-gW-ndf" firstAttribute="leading" secondItem="tP2-wu-Y66" secondAttribute="trailing" id="B6L-9Z-2lQ"/>
+                            <constraint firstItem="Ifw-7w-yB2" firstAttribute="leading" secondItem="Lxi-gW-ndf" secondAttribute="trailing" id="Fbh-s4-42h"/>
+                            <constraint firstAttribute="bottom" secondItem="GWg-BQ-gjk" secondAttribute="bottom" id="JKw-bC-E3S"/>
+                            <constraint firstAttribute="trailing" secondItem="dcy-dY-M2p" secondAttribute="trailing" id="NUt-c8-oNc"/>
+                            <constraint firstItem="GWg-BQ-gjk" firstAttribute="leading" secondItem="VWK-Rg-Wu7" secondAttribute="leading" id="QGS-N7-Tv9"/>
+                            <constraint firstItem="Lxi-gW-ndf" firstAttribute="centerY" secondItem="GWg-BQ-gjk" secondAttribute="centerY" id="Tsk-Z9-Snf"/>
+                            <constraint firstItem="GWg-BQ-gjk" firstAttribute="centerY" secondItem="tP2-wu-Y66" secondAttribute="centerY" id="ZK4-pe-VcU"/>
+                            <constraint firstItem="dcy-dY-M2p" firstAttribute="leading" secondItem="VWK-Rg-Wu7" secondAttribute="leading" id="ZrY-Pb-7RE"/>
+                            <constraint firstItem="tP2-wu-Y66" firstAttribute="leading" secondItem="GWg-BQ-gjk" secondAttribute="trailing" id="hjf-Sa-NAZ"/>
+                            <constraint firstItem="c6h-cf-Zze" firstAttribute="leading" secondItem="ueh-BI-wy3" secondAttribute="trailing" id="jyn-0i-0CL"/>
+                            <constraint firstItem="ueh-BI-wy3" firstAttribute="centerY" secondItem="GWg-BQ-gjk" secondAttribute="centerY" id="n0P-JD-Dc9"/>
+                            <constraint firstItem="dcy-dY-M2p" firstAttribute="top" secondItem="VWK-Rg-Wu7" secondAttribute="top" id="pBY-I9-I5Q"/>
+                            <constraint firstItem="GWg-BQ-gjk" firstAttribute="top" secondItem="dcy-dY-M2p" secondAttribute="bottom" constant="6" id="pHg-bp-WUd"/>
+                            <constraint firstItem="GWg-BQ-gjk" firstAttribute="centerY" secondItem="Ifw-7w-yB2" secondAttribute="centerY" id="qMo-Ql-3g5"/>
+                            <constraint firstItem="ueh-BI-wy3" firstAttribute="leading" secondItem="hCF-ox-leN" secondAttribute="trailing" id="reo-Gf-r7A"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="file_manager-download" translatesAutoresizingMaskIntoConstraints="NO" id="rqR-p7-lAC" userLabel="Image View - Saved indicator">
+                        <rect key="frame" x="289" y="26" width="24" height="24"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="5vX-g1-J8g"/>
+                            <constraint firstAttribute="width" constant="24" id="Pbk-7F-sex"/>
+                        </constraints>
+                    </imageView>
+                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="1Ag-Kn-RKj" userLabel="Gray Activity Indicator - Download indicator">
+                        <rect key="frame" x="291" y="28" width="20" height="20"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </activityIndicatorView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="centerY" secondItem="1Ag-Kn-RKj" secondAttribute="centerY" id="3MR-kJ-1cN"/>
+                    <constraint firstAttribute="trailing" secondItem="VWK-Rg-Wu7" secondAttribute="trailing" constant="34" id="9mT-sS-iUi"/>
+                    <constraint firstAttribute="bottom" secondItem="Y3x-Rc-kBV" secondAttribute="bottom" id="AZN-cy-7ac"/>
+                    <constraint firstItem="VWK-Rg-Wu7" firstAttribute="leading" secondItem="wir-Rn-7FP" secondAttribute="leading" constant="17" id="GGJ-cO-35K"/>
+                    <constraint firstAttribute="centerY" secondItem="VWK-Rg-Wu7" secondAttribute="centerY" id="IxV-8l-Rjh"/>
+                    <constraint firstItem="Y3x-Rc-kBV" firstAttribute="top" secondItem="wir-Rn-7FP" secondAttribute="top" id="LY7-mz-vGW"/>
+                    <constraint firstAttribute="trailing" secondItem="1Ag-Kn-RKj" secondAttribute="trailing" constant="9" id="ZWW-pt-hz6"/>
+                    <constraint firstAttribute="centerY" secondItem="rqR-p7-lAC" secondAttribute="centerY" id="cOP-g9-zcy"/>
+                    <constraint firstItem="Y3x-Rc-kBV" firstAttribute="leading" secondItem="wir-Rn-7FP" secondAttribute="leading" id="p2I-3F-dPd"/>
+                    <constraint firstAttribute="trailing" secondItem="rqR-p7-lAC" secondAttribute="trailing" constant="7" id="wDb-Zb-MQd"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="downloadIndicator" destination="1Ag-Kn-RKj" id="Yhv-j0-XAc"/>
+                <outlet property="nameLabel" destination="dcy-dY-M2p" id="8Wb-jj-ghx"/>
+                <outlet property="savedIndicator" destination="rqR-p7-lAC" id="xWv-9i-U7b"/>
+                <outlet property="sendButton" destination="c6h-cf-Zze" id="B3I-JN-SSo"/>
+                <outlet property="sizeLabel" destination="tP2-wu-Y66" id="rgw-PN-9HR"/>
+                <outlet property="updateDateLabel" destination="hCF-ox-leN" id="Igr-Qr-zeP"/>
+                <outlet property="updateIndicator" destination="Y3x-Rc-kBV" id="fZr-kU-LUB"/>
+                <outlet property="updateLabel" destination="Ifw-7w-yB2" id="Ix9-D8-pX6"/>
+                <outletCollection property="veryLargeSpaceConstraints" destination="GGJ-cO-35K" id="nnL-m9-zd0"/>
+                <outletCollection property="normalFontLabels" destination="dcy-dY-M2p" id="5Hd-hL-MNN"/>
+                <outletCollection property="normalFontLabels" destination="GWg-BQ-gjk" id="rmb-J7-se1"/>
+                <outletCollection property="normalFontLabels" destination="tP2-wu-Y66" id="lom-eP-GhA"/>
+                <outletCollection property="normalFontLabels" destination="Lxi-gW-ndf" id="qOX-Of-V8c"/>
+                <outletCollection property="normalFontLabels" destination="Ifw-7w-yB2" id="Occ-CT-9RF"/>
+                <outletCollection property="normalFontLabels" destination="hCF-ox-leN" id="IDF-YY-qE4"/>
+                <outletCollection property="normalFontLabels" destination="ueh-BI-wy3" id="5P6-9o-5Qn"/>
+                <outletCollection property="normalFontButtons" destination="c6h-cf-Zze" id="p4b-TI-zk9"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="file_manager-download" width="23" height="23"/>
+    </resources>
+</document>

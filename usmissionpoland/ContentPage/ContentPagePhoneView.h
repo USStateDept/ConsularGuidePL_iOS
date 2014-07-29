@@ -1,0 +1,15 @@
+//
+//  ContentPagePhoneView.h
+//  usmissionpoland
+//
+//  Created by Bartek Lupinski on 1/7/14.
+//  Copyright (c) 2014 Agitive Sp. z o.o. All rights reserved.
+//
+
+#import "ContentPageViewBase.h"
+
+@interface ContentPagePhoneView : ContentPageViewBase <UIAlertViewDelegate>
+
+- (id)initWithFrame:(CGRect)frame phoneNumber:(NSString*)phoneNumber;
+
+@end
